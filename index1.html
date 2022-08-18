@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title">
+					<h1 style="position:relative; top:1em;">はじめての<span style="color:#4db56a">Android</span><br>アプリ開発</h1>
+					<br>
+					<h5 style="position:relative; top:1em; left:8em;">小川 桜輝</h5>
+					<div class="droid" style="position:relative; bottom:1em;">
+						<img src="images/droid.png" alt="droid" title="droid">
+					</div>
+				</section>
+				<section class="title">
+					<section class="slide1" style="position:relative;top:10em;">TECH::CAMP</section>
+					<section>人生を変える一ヶ月</section>
+					<section>最高のプログラミングスキルを最短で</section>
+				</section>
+				<section class="slide2">Slide 2</section>
+
+				<section class="self-introduction">
+					<h2>自己紹介</h2>
+					<section>
+						<ul style="position:relative; top:1em;">
+							<li>名前:&nbsp;&nbsp;小川 桜輝 (おがわ こうき)</li>
+							<li>所属:&nbsp;&nbsp;長崎大学工学部電気電子工学コース</li>
+							<li>サークル:&nbsp;&nbsp;マルチメディア研究会</li>
+								<ul><li>作曲,3DCG,プログラミング等</li></ul>
+						</ul>
+					</section>
+					<section>
+						<img src="images/tatikoma.png" alt="tatikoma" title="tatikoma" width="600" style="position:relative; right:6em; top:4em;">
+						<img src="images/muse.png" alt="dtm" title="dtm" width="600" style="position:relative; left:5em; bottom:2em;">
+					</section>
+					<section>
+						<h3>早速はじめていきましょう!</h3>
+					</section>
+				</section>
+				<section data-markdown data-separator="---" class="slide3">
+					<textarea data-template>
+					  # タイトル１
+					  ああああ [link](https://meknowledge.jpn.org/).
+					  改行はスペース２つにエンター
+					  ---
+					  ## タイトル２
+					  * ああああ
+						  * tabでスペース
+						* tabでスペース
+					  * ううう
+					  ---
+					  ### タイトル３
+					  1. １ばんめ
+					  2. ２ばんめ
+						  2. tabでスペース　２の子供になる
+					  ---
+					  ## 画像の挿入
+					  ![](https://meknowledge.jpn.org/wp-content/uploads/2020/12/mandible_36-1.png "mandible plate")
+					  ---
+					  すいへいせん
+					  ***
+					  すいへいせん
+					  ---
+					  <font color="Red">あかいろ</font>
+					  <font color="pink">ぴんく</font>
+					  <font color="blue">あお</font>
+					  ---
+					  // 表を作りたいとき
+					  |h1|h2|h3|h4|
+					  |--|:--:|--:|--|
+					  |a|b|a|b|
+					  |leftleft|centercenter|rightright|b|
+					  |a|b|a|b|
+					  |a|b|a|b|
+					  |a|b|a|b|
+					  |a|b|a|b|
+					</textarea>
+					<aside class="notes">
+						ここにノートかく。ここにノートかく。ここにノートかく。ここにノートかく。ここにノートかく。
+					</aside>
+				</section>
+				<section class="title">
+					<h1 style="position:relative; top:1em;">はじめての<span style="color:#4db56a">Android</span><br>アプリ開発</h1>
+					<br>
+					<h5 style="position:relative; top:1em; left:8em;">小川 桜輝</h5>
+					<div class="droid" style="position:relative; bottom:1em;">
+						<img src="images/droid.png" alt="droid" title="droid">
+					</div>
+				</section>
+
+				<section class="self-introduction">
+					<h2>自己紹介</h2>
+					<section>
+						<ul style="position:relative; top:1em;">
+							<li>名前:&nbsp;&nbsp;小川 桜輝 (おがわ こうき)</li>
+							<li>所属:&nbsp;&nbsp;長崎大学工学部電気電子工学コース</li>
+							<li>サークル:&nbsp;&nbsp;マルチメディア研究会</li>
+								<ul><li>作曲,3DCG,プログラミング等</li></ul>
+						</ul>
+					</section>
+					<section>
+						<img src="images/tatikoma.png" alt="tatikoma" title="tatikoma" width="600" style="position:relative; right:6em; top:4em;">
+						<img src="images/muse.png" alt="dtm" title="dtm" width="600" style="position:relative; left:5em; bottom:2em;">
+					</section>
+					<section>
+						<h3>早速はじめていきましょう!</h3>
+					</section>
+				</section>
+
+				<section class="install">
+					<h2>準備</h2>
+					<section>
+						<div class="onedown">
+						<h3>1. <span style="color:#4db56a">Android Studio</span>のインストール</h3>
+						<p style="text-align:left;">Android Studioとは...</p>
+						<h4>Androidアプリを作るための統合開発環境</h4>
+						<p>インストールしていきます</p>
+						<p class="kome">※IntelliJベースなのでそちらでもできる</p>
+						<p class="kome">※容量は結構大きい</p>
+						</div>
+					</section>
+					<section style="position:relative;top:1rem;">
+						<h3>1. <span style="color:#4db56a">Android Studio</span>のインストール</h3>
+						<p></p>
+						<p>Windowsの場合、Wingetを使うのが良い</p>
+						<p>WindowsTerminalかPowerShellかcmdを開く</p>
+						<div>
+							<div class="cmdback" style="z-index:2;display:flex;width:3em;position:relative;left:7em;top:1em;">
+								<img src="images/cmd.png" alt="cmd" title="cmd" style="margin-right:100px;">
+								<img src="images/pwsh.png" alt="pwsh" title="pwsh">
+							</div>
+							<div class="cmdbox" style="z-index:0;border-radius: 40px/60px;padding:10px;background-color: white;height: 140px;width:600px;position:relative;bottom:3em;left:3.5em;"></div>
+						</div>
+					</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

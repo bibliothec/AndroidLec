@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="dist/theme/black.css">
 		<link rel="stylesheet" href="style.css">
 
-
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -19,7 +18,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section class="title">
-					<h1 style="position:relative; top:1em;">はじめての<span class="green">Android</span><br>アプリ開発</h1>
+					<h1 style="position:relative; top:1em;">はじめての<span style="color:#4db56a">Android</span><br>アプリ開発</h1>
 					<br>
 					<h5 style="position:relative; top:1em; left:8em;">小川 桜輝</h5>
 					<div class="droid" style="position:relative; bottom:1em;">
@@ -30,10 +29,10 @@
 				<section class="self-introduction">
 					<h2>自己紹介</h2>
 					<section>
-						<ul style="position:relative; top:1em;margin: 1em; padding: 0em;">
+						<ul style="position:relative; top:1em;">
 							<li>名前:&nbsp;&nbsp;小川 桜輝 (おがわ こうき)</li>
-							<li>所属:&nbsp;&nbsp;長崎大学工学部<span style="color:yellow">電気電子工学</span>コース</li>
-							<li>サークル:&nbsp;&nbsp;<span style="color:#18FFFF;">マルチメディア</span>研究会</li>
+							<li>所属:&nbsp;&nbsp;長崎大学工学部電気電子工学コース</li>
+							<li>サークル:&nbsp;&nbsp;マルチメディア研究会</li>
 								<ul><li>作曲,3DCG,プログラミング等</li></ul>
 						</ul>
 					</section>
@@ -42,7 +41,7 @@
 						<img src="images/muse.png" alt="dtm" title="dtm" width="600" style="position:relative; left:5em; bottom:2em;">
 					</section>
 					<section>
-						<h3>早速始めていきましょう!</h3>
+						<h3>早速はじめていきましょう!</h3>
 					</section>
 				</section>
 
@@ -50,18 +49,19 @@
 					<h2>準備</h2>
 					<section>
 						<div class="onedown">
-						<h3>1. <span class="green">Android Studio</span>のインストール</h3>
+						<h3>1. <span style="color:#4db56a">Android Studio</span>のインストール</h3>
 						<p style="text-align:left;">Android Studioとは...</p>
-						<h4><span class="red">アプリを作るための統合開発環境</span></h4>
+						<h4>Androidアプリを作るための統合開発環境</h4>
 						<p>インストールしていきます</p>
 						<p class="kome">※IntelliJベースなのでそちらでもできる</p>
 						<p class="kome">※容量は結構大きい</p>
 						</div>
 					</section>
 					<section style="position:relative;top:1rem;">
-
+						<h3>1. <span style="color:#4db56a">Android Studio</span>のインストール</h3>
+						<p></p>
 						<p>Windowsの場合、Wingetを使うのが良い</p>
-						<p>(WindowsTerminal|PowerShell|cmd)を開く</p>
+						<p>WindowsTerminalかPowerShellかcmdを開く</p>
 						<div>
 							<div class="cmdback" style="z-index:2;display:flex;width:3em;position:relative;left:7em;top:1em;">
 								<img src="images/cmd.png" alt="cmd" title="cmd" style="margin-right:100px;">
@@ -85,7 +85,7 @@
 					<section>
 						<p>Android Studioを開く</p>
 					</section>
-				</section>
+				</section>>
 
 				<section>
 					<section>
@@ -102,105 +102,18 @@
 					<h2>kotlin入門</h2>
 					<section>
 						<p>Android開発では主にJavaかKotlinが使われる</p>
-						<p style="font-size:30px;text-align:right;">C++や最近だとFlutter(Dart)も</p>
-						<p>どちらもオブジェクト指向の言語</p>
-						<p>Kotlinが言語としてモダン</p>
-						<ul>
-							<li>Javaと比べ書く量が少ない</li>
-							<li>Nullを許容しない</li>
-						</ul>
-						<p>Kotlinを使っていきます</p>
-
-					</section>
-					<section>
-						<div class="flex">
-							<pre><code>
-								//Kotlin
-								//変数の宣言と値の代入
-								var 変数名: 型 = 値
-
-								//定数の宣言と値の代入
-								val 定数名: 型 = 値
-							</code></pre>
-							<pre><code>
-								//具体例
-								//変数の宣言と値の代入
-								var a: Int = 1
-
-								//定数の宣言と値の代入
-								val a: Int = 1
-							</code></pre>
-						</div>
-						<p style="font-size:30px">開発ではvalを使うことが多い</p>
-						<p style="font-size:30px">最近の言語は変数名:型の形が多い</p>
-						<p style="font-size:30px">Kotlinは文の最後にセミコロン[;]がいらない</p>
-					</section>
-					<section>
-						<div class="flex">
-						<pre><code>
-							//Kotlin
-							//if文
-							if(条件式){
-								処理1
-							}else{
-								処理2
-							}
-						</code></pre>
-						<pre><code>
-							//具体例
-							//if文
-							if(a==0){
-								println("false")
-							}else{
-								println("true")
-							}
-						</code></pre>
-						</div>
-						<p>Kotlinでのifは文だけでなく式にもなる</p>
-					</section>
-					<section>
-						<div class="flex">
-							<pre><code>
-								//Kotlin
-								//for文
-								for(変数名 in はじめの数..終わりの数){
-									処理
-								}
-							</code></pre>
-							<pre><code>
-								for(i in 1..10){
-									println("${i}")
-								}
-							</code></pre>
-						</div>
 					</section>
 					<section>
 						<pre><code>
-							//関数
-							fun 関数名(仮引数):返り値の型{
-								処理
-							}
+							//変数の宣言と値の代入
+							var 変数名: 型 = 値;
+							var a: Int = 1;
 
-							//クラス
-							class クラス名 : 継承元クラス名{
-
-							}
+							//定数の宣言と値の代入
+							val 定数名: 型 = 値;
+							val a: Int =1;
 						</code></pre>
-					</section>
-					<section>
-						<div class="flex">
-							<pre><code>
-
-							</code></pre>
-							<pre><code>
-
-							</code></pre>
-						</div>
-					</section>
-					<section>
-						<p>細かい文法は沢山あります</p>
-						<p><s style="text-align:left">私も知らないことだらけです</s></p>
-						<p>今回示したものは読めるようにしておきましょう</p>
+						<p>開発ではvalを使うことが多いです</p>
 					</section>
 				</section>
 

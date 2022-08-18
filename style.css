@@ -1,0 +1,43 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    text-transform: none;
+}
+
+.self-introduction li { margin: 1em; padding: 0em}
+
+h2 {
+    font-size: 0.4em;
+    position: relative;
+    top: 0.6em;
+}
+
+.kome {
+    font-size:0.8em;
+    text-align:right;
+}
+
+p{
+    text-align:left;
+}
+
+.onedown{
+    position:relative;
+    top:1em;
+}
+
+.green {
+    color:#64DD17;
+}
+
+.red {
+    color:#FF4081;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+}
