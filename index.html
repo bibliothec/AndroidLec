@@ -47,7 +47,9 @@
 				</section>
 
 				<section class="install">
-					<h2>準備</h2>
+					<section>
+						<h2>準備</h2>
+					</section>
 					<section>
 						<div class="onedown">
 						<h3>1. <span class="green">Android Studio</span>のインストール</h3>
@@ -60,7 +62,8 @@
 					</section>
 					<section style="position:relative;top:1rem;">
 
-						<p>Windowsの場合、Wingetを使うのが良い</p>
+						<p>Windowsの場合、wingetを使うのが良い</p>
+						<p class="kome">※wingetはパッケージマネージャというもの</p>
 						<p>(WindowsTerminal|PowerShell|cmd)を開く</p>
 						<div>
 							<div class="cmdback" style="z-index:2;display:flex;width:3em;position:relative;left:7em;top:1em;">
@@ -75,6 +78,9 @@
 						<p><pre style="font-size:0.8em"><code>winget search 欲しいソフトウェア</code></pre></p>
 					</section>
 					<section>
+						<img src="images/2.png">
+					</section>
+					<section>
 						<p>ソフトウェアのインストール</p>
 						<p><pre style="font-size:0.8em"><code>winget install 欲しいソフトウェアのid</code></pre></p>
 						<br>
@@ -83,26 +89,139 @@
 						<p class="kome">※大文字小文字は区別しない</p>
 					</section>
 					<section>
-						<p>Android Studioを開く</p>
+						<img src="images/3.png">
 					</section>
+					<section>
+						<p>Android Studioを開く</p>
+						<p class="kome">Help imporove Android Studioが出てきたらDon't send</p>
+						<img src="images/4.png" width="500px">
+						<p>Nextをクリック</p>
+					</section>
+					<section>
+						<p>Standardを選び、Next</p>
+						<img src="images/5.png" width="700px">
+					</section>
+					<section>
+						<p>好きなUIを選びNext</p>
+						<p class="kome">個人的には黒の方が目に優しく感じる</p>
+						<img src="images/6.png" width="700px">
+					</section>
+					<section>
+						<p>そのままNext</p>
+						<img src="images/7.png" width="700px">
+					</section>
+					<section>
+						<p>Acceptにチェックを入れて、Finish</p>
+						<img src="images/8.png" width="700px">
+					</section>
+					<section>
+						<h2>Wait a few minites...</h2>
+					</section>
+					<section>
+						<p>無事にインストールが終わったらこの画面が出る</p>
+						<img src="images/10.png" width="700px">
+					</section>
+					<section>
+						<p>More Actionsをクリック</p>
+						<p>SDK Managerをクリック</p>
+						<p>Android 10.0をクリックし、Apply</p>
+					</section>
+					<section>
+						<h2>これでインストールは完了です</h2>
+					</section>
+
 				</section>
 
 				<section>
 					<section>
-						<h3>とりあえず何かを作ってみよう</h3>
+						<h3>とりあえず何かを作ってみる</h3>
 						<p style="text-align:center">ボタンを押したらテキストが表示されるアプリ</p>
 					</section>
 					<section>
-
+						<h2>まねをしてください</h2>
 					</section>
-
+					<section>
+						<p>New Projectを開く</p>
+						<img src="images/10.png" width="700px">
+					</section>
+					<section>
+						<p>Empty Activity選択、Next</p>
+						<img src="images/12.png" width="700px">
+					</section>
+					<section>
+						<p>Nameをtest001, LanguageをKotlinに</p>
+						<p>Finishをクリック</p>
+						<img src="images/13.png" width="700px">
+					</section>
+					<section>
+						<p>プロジェクトが作られるまで少し待ちます</p>
+						<img src="images/14.png" width="700px">
+					</section>
+					<section>
+						<h2>いくつか設定をしていきます</h2>
+					</section>
+					<section>
+						<h3>エミュレータのインストール</h3>
+						<p class="kome">仮想的なAndroid端末</p>
+						<p>右上のno devicesをクリック</p>
+						<p>Device Managerをクリック</p>
+						<p>Create deviceをクリック</p>
+					</section>
+					<section>
+						<p>PhoneとPixel5を選択してNext</p>
+						<P>Rのdownloadをクリック</P>
+						<p>Acceptを選択、Nextをクリック</p>
+						<p>Finishを押す✕2</p>
+						<p>右上の「-」を押してDevice Manager終了</p>
+					</section>
+					<section>
+						<h3>Ctrl+ホイールで<br>エディタの拡大縮小</h3>
+						<p>Settings>Editor>General内のMouse</p>
+						<p>Change font size with Ctrl+Mouse Wheelにチェック</p>
+					</section>
+					<section>
+						<h3>前回のプロジェクトが<br>起動時に開かない設定</h3>
+						<p>Settings>Appearance&Behavior>SystemSettings内のStartup/Shutdown</p>
+						<p>Reopen last project on startupのチェックを外す</p>
+					</section>
+					<section>
+						<h2>実際に作っていきます</h2>
+					</section>
+					<section>
+						<h3>activity_main.xml</h3>
+						<p>ボタンを２つ作る</p>
+						<ul>
+							<li>Textをあか,IDをbtnRed</li>
+							<li>Textをあお,IDをbtnBlue</li>
+						</ul>
+						<p>TextViewを一つ作る</p>
+						<ul>
+							<li>IDをshow,textSizeを34sp</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/16.png">
+					</section>
+					<section>
+						<h3>MainActivity.ktにコードを書く</h3>
+					</section>
+					<section>
+						<img src="images/18.png">
+					</section>
+					<section>
+						<h3>右上の<span style="color:greenyellow;">緑色の三角ボタン</span>を押すと<br>ビルド(実行)され、エミュが起動</h3>
+						<p>上手く行かない時にはコード等を修正</p>
+						<p>ボタンを押すと表示されるテキストが変わる</p>
+					</section>
 				</section>
 
 				<section class="kotlin">
-					<h2>kotlin入門</h2>
+					<section>
+						<h1>Kotlin入門</h1>
+					</section>
 					<section>
 						<p>Android開発では主にJavaかKotlinが使われる</p>
-						<p style="font-size:30px;text-align:right;">C++や最近だとFlutter(Dart)も</p>
+						<p style="font-size:30px;text-align:right;">C/C++や最近だとFlutter(Dart)も</p>
 						<p>どちらもオブジェクト指向の言語</p>
 						<p>Kotlinが言語としてモダン</p>
 						<ul>
@@ -110,7 +229,19 @@
 							<li>Nullを許容しない</li>
 						</ul>
 						<p>Kotlinを使っていきます</p>
-
+					</section>
+					<section>
+						<h3>Kotlinの基本情報</h3>
+						<ul>
+							<li>JetBrains社が2011年にリリース</li>
+							<li>ライセンスはApache-2.0</li>
+							<li>Androidはもちろん、altJSかつJVMやNativeで<br>動かせるので、応用性が高い</li>
+							<li><s>使われているとは言っていない</s></li>
+							<li>拡張子はkt</li>
+						</ul>
+					</section>
+					<section>
+						<h3>実際に文法を見ていきましょう</h3>
 					</section>
 					<section>
 						<div class="flex">
@@ -132,6 +263,7 @@
 							</code></pre>
 						</div>
 						<p style="font-size:30px">開発ではvalを使うことが多い</p>
+						<p style="font-size:30px">val,varは類推型</p>
 						<p style="font-size:30px">最近の言語は変数名:型の形が多い</p>
 						<p style="font-size:30px">Kotlinは文の最後にセミコロン[;]がいらない</p>
 					</section>
@@ -156,7 +288,34 @@
 							}
 						</code></pre>
 						</div>
+					</section>
+					<section>
 						<p>Kotlinでのifは文だけでなく式にもなる</p>
+						<pre><code>
+							val ans = if(a==0){
+								println("a is false")
+							}else{
+								println("a is true")
+							}
+						</code></pre>
+						<p>最近の言語ではifを式として扱えることが多い</p>
+					</section>
+					<section>
+						<p>swichの代わりのWhen</p>
+						<pre><code>
+							when(a){
+								1 -> {
+									println("aは1です。")
+								}
+								2 -> {
+									println("aは2です。")
+								}
+								else -> {
+									println("aは1でも2でもありません。")
+								}
+							}
+						</code></pre>
+						<p>こちらも式として扱える</p>
 					</section>
 					<section>
 						<div class="flex">
@@ -175,17 +334,73 @@
 						</div>
 					</section>
 					<section>
+						<div class="flex">
+							<pre><code>
+								//メソッド(関数)
+								fun メソッド名(仮引数):返り値の型{
+									処理
+								}
+							</code></pre>
+							<pre><code>
+								//具体例
+								fun square(width: Int,height: Int):Int {
+									return width*height
+								}
+							</code></pre>
+					</div>
+						<p>クラス内にある関数をメソッドと言います</p>
+						<p>Unit型(Cで言うvoid)は返り値の型を省略可</p>
+					</section>
+					<section>
+						<p>最近は関数型プログラミングの流行っている</p>
+						<P>ラムダ式、簡単に言うと名前のない関数</P>
+						<div class="flex">
 						<pre><code>
-							//関数
-							fun 関数名(仮引数):返り値の型{
-								処理
-							}
-
+							引数 -> 処理
+						</code></pre>
+						<pre><code>
+							val array = arrayOf(1,2,3)
+							array.forEach({num -> println(num)})
+						</code></pre>
+						</div>
+					</section>
+					<section>
+						<p>ラムダ関数に着目</p>
+						<pre><code>
+							array.forEach({num -> println(num)})
+						</code></pre>
+						<p>最後の引数がラムダ関数の時、()を前に出せる</p>
+						<pre><code>array.forEach(){num -> println(num)}</code></pre>
+						<p>引数がラムダ関数のみの時、()を消せる</p>
+						<pre><code>array.forEach{num -> println(num)}</code></pre>
+						<p>引数が1つの時、引数をitとし処理できる</p>
+						<pre><code>array.forEach{println(it)}</code></pre>
+					</section>
+					<section>
+						<pre><code>
 							//クラス
 							class クラス名 : 継承元クラス名{
-
+								プロパティ
+								メソッド
+							}
+							//インスタンス化
+							val 定数名 = クラス名()
+							//クラス内のメソッドの実行
+							定数名.メソッド名()
+						</code></pre>
+						<p>クラスはメソッドとプロパティ(関数と変数や定数)をひとまとめにしたもの</p>
+					</section>
+					<section>
+						<p>一般的には、以下のように使う</p>
+						<pre><code>
+							class a :b{
+								override fun bfun(num: Int?){
+									super.bfun()
+								}
 							}
 						</code></pre>
+						<p>override: 親クラスのメソッドを上書き</p>
+						<p>super.メソッド: 親クラスのメソッドを使用</p>
 					</section>
 					<section>
 						<div class="flex">
@@ -199,9 +414,131 @@
 					</section>
 					<section>
 						<p>細かい文法は沢山あります</p>
-						<p><s style="text-align:left">私も知らないことだらけです</s></p>
+						<p>私も知らないことは多いです</p>
 						<p>今回示したものは読めるようにしておきましょう</p>
 					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>次にAndroidアプリの中身を見ていきましょう</h2>
+						<p>結構複雑です</p>
+					</section>
+					<section>
+						<p>Kotlinのファイルの場所</p>
+						<p>app>src>main>java>com.~>MainActivity</p>
+					</section>
+					<section>
+						<p>アプリ全体の設定</p>
+						<p>app>src>main>resAndroidManifest.xml</p>
+					</section>
+					<section>
+						<p>インターフェイス</p>
+						<p>app>src>main>>res>layout>activity_main.xml</p>
+					</section>
+					<section>
+						<p>文字列の保管場所</p>
+						<p>app>src>main>res>values>strings.xml</p>
+						<p>特に多言語対応する際に便利</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>再び実際にアプリを作ってみましょう</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>本格的なアプリを作ってみる</h2>
+					</section>
+					<section>
+						<h2>ストップウォッチを作ってみる</h2>
+						<img src="images/clock.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/22.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/21.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/19.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/20.png" alt="" srcset="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>電卓を作ってみる</h2>
+					</section>
+					<section>
+						<img src="images/27.png" width="1000px">
+					</section>
+					<section>
+						<img src="images/23.png" width="1000px">
+					</section>
+					<section>
+						<img src="images/24.png" width="1000px">
+					</section>
+					<section>
+						<img src="images/25.png" width="1000px">
+					</section>
+					<section>
+						<img src="images/26.png" width="1000px">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>ペイントアプリを作ってみる</h2>
+					</section>
+					<section>
+						<img src="images/30.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/31.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/32.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/33.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/34.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/35.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/36.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/37.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/38.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/39.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/40.png" alt="" srcset="">
+					</section>
+					<section>
+						<img src="images/41.png" alt="" srcset="">
+					</section>
+				</section>
+				<section></section>
+				<section>
+					<p>著作権表示</p>
+					<ul>
+						<li>Android ロボットは、Google が作成および提供している作品から複製または変更したものであり、クリエイティブ・コモンズ表示 3.0 ライセンスに記載された条件に従って使用しています。</li>
+						<li>©2022 小川桜輝</li>
+						<p>二次配布はご遠慮して頂くようお願い申し上げます</p>
+					</ul>
 				</section>
 
 			</div>
